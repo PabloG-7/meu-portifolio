@@ -377,3 +377,108 @@ footer ul li a {
     font-size: 300;
     margin-top: 2rem;
 }
+
+/* Responsivo Design Code */
+
+@media (max-width: 1280px) {
+    header {
+        padding: 1rem 2rem;
+        gap: 2rem;
+    }
+    .sobre .sobre-container {
+        gap: 3rem;
+    }
+    .experiencia-info {
+        flex-direction: column;
+    }
+    .input-box input {
+        padding: 2rem 5rem;
+        font-size: 2.5rem;
+    }
+    .input-box input::placeholder {
+        font-size: 2.5rem;
+    }
+    .input-box i {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        gap: 1rem;
+        padding: 1 rem 1rem;
+    }
+    header .logo {
+        font-size: 1rem;
+    }
+    header .visitar-btn {
+        display: none;
+    }
+    .sobre-container {
+        flex-direction: column;
+    }
+    .input-box input {
+        padding: 1rem 2rem;
+        font-size: 1.8rem;
+    }
+    .input-box input::placeholder {
+        font-size: 1.5rem;   
+    }
+    .input-box i {
+        display: none;
+    }
+    .grid {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .experiencia-info img {
+        width: 70vw;
+    }
+}
+
+@media (max-width: 600px) {
+    header #menu-icon {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        margin-top: 1rem;
+        width: 100%;
+        padding: 1rem;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 3rem;
+        display: none;
+    }
+    .nav-links li {
+        margin-top: 1.5rem;
+        padding: 1rem;
+    }
+    .nav-links.active {
+        display: block;
+    }
+    header {
+        padding: 1rem 5rem;
+        gap: 8rem;
+    }
+    header .logo {
+        font-size: 1.5rem;
+    }
+    .sobre-container img {
+        width: 80vw;
+    }
+    .input-box input {
+        padding: 0.5rem 3rem;
+        width: 80%;
+        font-size: 1.5rem ;
+    }
+    .input-box input::placeholder {
+        font-size: 1.5rem;
+    }
+    footer ul {
+        gap: 1rem;
+    }
+}
