@@ -470,6 +470,20 @@ footer ul li a {
     .sobre-container img {
         width: 80vw;
     }
+    .section-titulo {
+        margin-left: -5vw;
+        font-size: 15vw;
+    }
+    .projeto-card {
+       margin-left: -8.5vw;
+       width: 93vw;
+    }
+    .projeto-card img {
+        width: 80vw;
+    }
+    .btn-grupo {
+        font-size: 4vw;
+    }
     .input-box input {
         padding: 0.5rem 3rem;
         width: 80%;
@@ -480,5 +494,17 @@ footer ul li a {
     }
     footer ul {
         gap: 1rem;
+    }
+    
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    
+    ::-webkit-scrollbar-track {
+        display: none;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        display: none;
     }
 }
