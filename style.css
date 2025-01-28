@@ -19,7 +19,7 @@ header {
     align-items: center;
     justify-content: center;
     gap: 5rem;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgb(0, 0, 0);
     backdrop-filter: blur(8px);
     color: #fff;
     padding: 0.5rem 1.5rem;
@@ -37,6 +37,7 @@ header {
 
 .logo:hover {
     transform: scale(1.05);
+    color: rgb(0, 157, 255);
 }
 
 .nav-links {
@@ -158,6 +159,9 @@ section {
     text-wrap: nowrap;
     transition: 0.4s ease-in-out;
 }
+.btn-grupo .btn {
+    color: black;
+}
 
 .btn:hover {
     background-color: #000;
@@ -261,7 +265,7 @@ section {
 
 .projeto-card img {
     width: 21vw;
-    height: 25vh;
+    height: 13rem;
     border-radius: 1rem;
 }
 .imgproj1 {
@@ -306,6 +310,9 @@ section {
     border: 2px solid #fff;
     background-color: #fff;
     color: #000;
+}
+.projeto-card p {
+    line-height: 25px;
 }
 
 .projeto-card h3 {
@@ -471,7 +478,7 @@ footer ul li a {
         width: 80vw;
     }
     .section-titulo {
-        margin-left: -5vw;
+        margin-left: -4vw;
         font-size: 15vw;
     }
     .projeto-card {
@@ -479,7 +486,8 @@ footer ul li a {
        width: 93vw;
     }
     .projeto-card img {
-        width: 80vw;
+        width: 86vw;
+        height: 10rem;
     }
     .btn-grupo {
         font-size: 4vw;
