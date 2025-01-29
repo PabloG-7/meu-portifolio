@@ -149,6 +149,9 @@ section {
     display: flex;
     gap: 1rem;
 }
+.btn-grupo a {
+    color: rgb(53, 53, 53);
+}
 
 .btn {
     border-radius: 3rem;
