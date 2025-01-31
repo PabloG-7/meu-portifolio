@@ -235,6 +235,9 @@ section {
     font-size: 1.6rem;
     margin-bottom: 1rem;
 }
+.grid-card p {
+    line-height: 22px;
+}
 
 .grid-card span {
     font-size: 1.7rem;
@@ -278,7 +281,7 @@ section {
     box-shadow: 0px 0px 0px 3px blue;
 }
 .imgproj3 {
-    box-shadow: 0px 0px 0px 3px yellow;
+    box-shadow: 0px 0px 0px 3px red;
 }
 
 .projeto-card {
