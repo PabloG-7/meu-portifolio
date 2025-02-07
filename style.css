@@ -265,13 +265,13 @@ section {
 
 .projeto-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));  
+    grid-template-columns: repeat(auto-fit,minmax(466px,1fr));  
     gap: 2rem;
 }
 
 .projeto-card img {
-    width: 21vw;
-    height: 13rem;
+    width: 33vw;
+    height: 16vw;
     border-radius: 1rem;
 }
 .imgproj1 {
@@ -283,6 +283,10 @@ section {
 .imgproj3 {
     box-shadow: 0px 0px 0px 3px red;
 }
+.imgproj4 {
+    box-shadow: 0px 0px 0px 3px rgb(142, 142, 142);
+}
+
 
 .projeto-card {
     padding: 3rem 2rem;
@@ -361,6 +365,32 @@ section {
     transform: translate(50%, -50%);
 }
 
+.txt {
+   display: block;
+   width: 100.7%;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 3rem;
+  padding: 10px 10px;
+}
+
+.txt1 {
+    width: 40%;
+    height: 45px;
+    border-radius: 3rem;
+    font-size: 2rem;
+}
+
+.txt:hover {
+    transform: translateY(-5px);
+}
+
+.txt1:hover {
+    cursor:pointer;
+    background: linear-gradient(to left, rgb(0, 157, 255), rgb(255, 0, 255));
+    color: white;
+}
+
 /* Footer Section Code */
 
 footer {
@@ -404,6 +434,10 @@ footer ul li a {
     .experiencia-info {
         flex-direction: column;
     }
+    .projeto-card img {
+        width: 69vw;
+        height: 35vw;
+    }
     .input-box input {
         padding: 2rem 5rem;
         font-size: 2.5rem;
@@ -414,7 +448,14 @@ footer ul li a {
     .input-box i {
         font-size: 2.5rem;
     }
+    .txt {
+        font-size: 1.4rem;
+    }
+    .txt1 {
+        font-size: 1.2rem;
+    }
 }
+
 
 @media (max-width: 768px) {
     header {
@@ -429,6 +470,10 @@ footer ul li a {
     }
     .sobre-container {
         flex-direction: column;
+    }
+    .projeto-card img {
+        width: 69vw;
+        height: 40vw;
     }
     .input-box input {
         padding: 1rem 2rem;
@@ -493,7 +538,7 @@ footer ul li a {
     }
     .projeto-card img {
         width: 86vw;
-        height: 10rem;
+        height: 50vw;
     }
     .btn-grupo {
         font-size: 4vw;
