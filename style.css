@@ -236,7 +236,8 @@ section {
     margin-bottom: 1rem;
 }
 .grid-card p {
-    line-height: 22px;
+    line-height: 28px;
+    font-size: 1.2rem;
 }
 
 .grid-card span {
@@ -322,7 +323,9 @@ section {
     color: #000;
 }
 .projeto-card p {
-    line-height: 25px;
+    line-height: 27px;
+    font-size: 1.2rem;
+    text-align: justify;
 }
 
 .projeto-card h3 {
@@ -438,6 +441,10 @@ footer ul li a {
         width: 69vw;
         height: 35vw;
     }
+    .projeto-card p {
+        font-size: 1.3rem;
+        line-height: 34px;
+    }
     .input-box input {
         padding: 2rem 5rem;
         font-size: 2.5rem;
@@ -474,6 +481,10 @@ footer ul li a {
     .projeto-card img {
         width: 69vw;
         height: 40vw;
+    }
+    .projeto-card p {
+        font-size: 1.2rem;
+       text-align: justify;
     }
     .input-box input {
         padding: 1rem 2rem;
@@ -535,6 +546,10 @@ footer ul li a {
     .projeto-card {
        margin-left: -8.5vw;
        width: 93vw;
+    }
+    .projeto-card p {
+        line-height: 35px;
+        text-align: justify;
     }
     .projeto-card img {
         width: 86vw;
