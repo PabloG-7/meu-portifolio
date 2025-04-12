@@ -1,229 +1,345 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Pablo Gomes | Desenvolvedor Full Stack</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/avatar-de-favicon.png" type="image/x-icon">
-    <title>Pablo Gomes - Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
-    <!--Header Section Code-->
-
+    <!-- Header -->
     <header>
-
-        <a href="#" class="logo"><span>Pablo Gomes</span></a>
-
-        <ul class="nav-links">
-            <li>
-                <a href="#sobre">Sobre</a>
-            </li>
-            <li>
-                <a href="#experiencia">Experiência</a>
-            </li>
-            <li>
-                <a href="#projetos">Projetos</a>
-            </li>
-            <li>
-                <a href="#contato">Contato</a>
-            </li>
-        </ul>
-
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
-
-        <button class="visitar-btn"><a href="https://github.com/PabloG-7"><span style="color: white;">Visitar GitHub</span></a></button>
-
+        <div class="container">
+            <nav>
+                <div class="logo">Pablo Gomes</i></div>
+                <div class="nav-links">
+                    <a href="#home"><i class="fas fa-house"></i> Início</a>
+                    <a href="#about"><i class="fas fa-user"></i> Sobre</a>
+                    <a href="#skills"><i class="fas fa-code"></i> Habilidades</a>
+                    <a href="#experience"><i class="fas fa-briefcase"></i> Experiência</a>
+                    <a href="#projects"><i class="fas fa-folder-open"></i> Projetos</a>
+                    <a href="#contact"><i class="fas fa-envelope"></i> Contato</a>
+                </div>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
     </header>
 
-    <!-- Sobre Section Code -->
-
-    <section class="sobre" id="sobre">
-
-        <div class="sobre-container">
-
-            <img src="img/perfil.jpg" alt=""> 
-
-            <div class="info-box">
-
-            <div class="text"> 
-                <h3>Olá, Bem Vindo(a)</h3>
-                <h1>Pablo Gomes</h1>
-                <span class="texto-multiplo"></span>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1><i class="fas fa-laptop-code"></i>
+                Pablo Gomes
+              </h1>
+            <span class="anima-text"></span>
+            <p>Desenvolvedor Full Stack em transição, criando soluções web modernas e responsivas com foco na experiência do usuário.</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn btn-primary">Contato</a>
+                <a href="Curriculo-Pablo2025.pdf" class="btn btn-outline">Download CV</a>
             </div>
-
-            <div class="btn-grupo">
-
-                <a href="Curriculo-Pablo2025.pdf" download="Curriculo-Pablo2025">
-                    <div class="btn">Download Cv</div>
-                </a>
-
-
-            </div>
-
-            <div class="sociais">
-
-                <a href="https://www.linkedin.com/in/pablogomess/"><i class="fa-brands fa-linkedin"></i></a>
-                
-                <a href="https://github.com/PabloG-7"><i class="fa-brands fa-github"></i></a>
-
-            </div>
-        </div>
-
-    </section>
-
-    <!-- Experiência Section Code-->
-
-    <section class="experiencia" id="experiencia">
-
-        <h2 class="section-titulo">Experiência</h2>
-
-        <div class="experiencia-info">
-
-        <div class="grid">
-
-            <div class="grid-card">
-
-                <i class="fa-solid fa-file-code"></i>
-                <span>Frontend Desenvolvedor</span><br>
-                <h3>12 Meses</h3><br>
-                <p>- Criação de interfaces interativas e responsivas com HTML, CSS e JavaScript. Desenvolvimento de layouts modernos, acessíveis e adaptáveis para diferentes dispositivos.</p>
-            </div>
-     
-
-        <div class="grid-card">
-
-            <i class="fa-solid fa-code"></i>
-            <span>Backend Desenvolvedor</span><br>
-            <h3>12 Meses</h3><br>
-            <p>- Construção de APIs RESTful usando Node.js e Express. Integração com MySQL para gerenciamento de dados de forma segura e eficiente.</p>
-        </div>
-
-        <div class="grid-card">
-
-            <i class="fa-brands fa-git-alt"></i>
-            <span>Versionamento de Código</span><br>
-            <h3>12 Meses</h3><br>
-            <p>- Experiência com Git e GitHub, utilizando boas práticas de versionamento, colaboração em equipe e deploys organizados.</p>
-        </div>
-
-        <div class="grid-card">
-
-            <i class="fa-solid fa-laptop"></i>
-            <span>Full Stack Desenvolvedor</span><br>
-            <h3>Em Transição</h3><br>
-            <p>- Aprendendo a unir frontend e backend para desenvolver aplicações completas. Explorando novas tecnologias para aprimorar habilidades e otimizar processos.</p>
-        </div>
-        
-
-    </div>
-
-        <img src="img/perfil-foto.png" alt="">
-
-    </div>
-
-    </section>
-
-    <!-- Projetos Section Code -->
-
-    <section class="projetos" id="projetos">
-
-        <h2 class="section-titulo">Projetos Recentes</h2>
-
-        <div class="projeto-grid">
-
-            <div class="projeto-card">
-              <img class="imgproj1" src="img/proj1.png" alt="">  
-              <h3>LuckPet</h3>
-              <p>✅ LuckPet é uma plataforma online criada para petshops, com uma interface moderna e fácil de navegar, permitindo aos usuários comprar produtos para seus pets com agilidade e praticidade.</p>
-
-            <div class="btn-grupo">  
-
-                <div class="btn"><a href="https://pablog-7.github.io/ecommerce-luckpet/">Live Demo</a></div>
-
-                <div class="btn"><a href="https://github.com/PabloG-7/ecommerce-luckpet?tab=readme-ov-file">GitHub Code</a></div>
-            </div>
-        </div>
-
-        <div class="projeto-card">
-            <img class="imgproj2" src="img/proj2.png" alt="">
-            <h3>Gastos Mensais</h3>
-            <p>✅ Este é um projeto simples de controle de custos pessoais, criado como uma forma de aprimorar minhas habilidades em desenvolvimento front-end e manipulação de DOM com JavaScript.</p>
-
-          <div class="btn-grupo">
-
-              <div class="btn"><a href="https://pablog-7.github.io/controle-de-custos-pessoais/">Live Demo</a></div>
-
-              <div class="btn"><a href="https://github.com/PabloG-7/controle-de-custos-pessoais/tree/main">GitHub Code</a></div>
-          </div>
-      </div>
-
-      <div class="projeto-card">
-        <img class="imgproj3" src="img/proj3.png" alt="">  
-        <h3>UserFlow</h3>
-        <p>✅ API RESTful com Node.js e MySQL para CRUD de usuários, incluindo cadastro de dados detalhados e validação. Demonstra habilidades em backend e integração com banco de dados.</p>
-
-      <div class="btn-grupo">
-
-          <div class="btn"><a href="https://github.com/PabloG-7/userflow-backend">Live Demo</a></div>
-
-          <div class="btn"><a href="https://github.com/PabloG-7/userflow-backend">GitHub Code</a></div>
-      </div>
-  </div>
-
-
-  <div class="projeto-card">
-    <img class="imgproj4" src="img/proj4.png" alt="">  
-    <h3>Kushi.</h3>
-    <p>✅ O Kushi é um e-commerce de moda com design clean, responsivo e intuitivo, oferecendo uma navegação fluida e um catálogo bem organizado para a melhor experiência do usuário.</p>
-
-  <div class="btn-grupo">
-
-      <div class="btn"><a href="https://pablog-7.github.io/ecommerce-kushi/">Live Demo</a></div>
-
-      <div class="btn"><a href="https://github.com/PabloG-7/ecommerce-kushi">GitHub Code</a></div>
-</div>
-
-    </section>
-
-    <!-- Contato Section Code -->
-    <section class="contato" id="contato">
-        <div class="input-box">
-            <h2 class="section-titulo">Meu Contato</h2>
-            <form action="https://formspree.io/f/meoezgay" method="POST">
-                <input type="email" name="email" value="PabloxxxxxxXXX@gmail.com" required><br><br>
-                <textarea class="txt" name="message" placeholder="Digite sua mensagem" required></textarea><br>
-                <button class="txt1" type="submit">Enviar</button>
-            </form>
         </div>
     </section>
 
-    <!-- Footer Section Code -->
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Sobre Mim</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Desenvolvedor Full Stack em evolução constante</h3>
+                    <p>Olá! Sou Pablo Gomes, um desenvolvedor em transição para Full Stack, apaixonado por criar soluções web que combinam design atraente com funcionalidade robusta.</p>
+                    <p>Minha jornada começou com o desenvolvimento frontend, onde adquiri experiência na criação de interfaces interativas e responsivas. Atualmente, estou expandindo meus conhecimentos para o backend, buscando me tornar um profissional completo.</p>
+                    <p>Acredito na importância de escrever código limpo, bem estruturado e documentado, sempre seguindo as melhores práticas do mercado.</p>
+                </div>
+                <div class="about-image">
+                    <img src="img/perfil.jpg" alt="Pablo Gomes">
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>Habilidades</h2>
+            </div>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <h3><i class="fas fa-code"></i> Frontend</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>HTML/CSS</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>JavaScript</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>React</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Node.js</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Express</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>MySQL</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 65%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3><i class="fas fa-tools"></i> Outras</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Git/GitHub</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Responsive Design</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>UI/UX Basics</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 60%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="container">
+            <div class="section-title">
+                <h2>Experiência</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Desenvolvedor Frontend</h3>
+                        <p>12 meses de experiência</p>
+                        <ul>
+                            <li>Criação de interfaces interativas e responsivas com HTML, CSS e JavaScript</li>
+                            <li>Desenvolvimento de layouts modernos, acessíveis e adaptáveis para diferentes dispositivos</li>
+                            <li>Colaboração com designers para implementação de interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-date">2024 - 2025</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Desenvolvedor Backend</h3>
+                        <p>12 meses de experiência</p>
+                        <ul>
+                            <li>Construção de APIs RESTful usando Node.js e Express</li>
+                            <li>Integração com MySQL para gerenciamento de dados de forma segura e eficiente</li>
+                            <li>Implementação de autenticação e autorização</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-date">2024 - 2025</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Versionamento de Código</h3>
+                        <p>Experiência com Git e GitHub</p>
+                        <ul>
+                            <li>Utilização de boas práticas de versionamento</li>
+                            <li>Colaboração em equipe</li>
+                            <li>Deploys organizados</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-date">2024 - 2025</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>Projetos Recentes</h2>
+            </div>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/proj1.png" alt="LuckPet">
+                    </div>
+                    <div class="project-info">
+                        <h3>LuckPet - (Projeto Pessoal)</h3>
+                        <p>✅ Plataforma online para petshops com interface moderna e fácil usabilidade, oferecendo promoções em rações selecionadas.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML/CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Responsivo</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://pablog-7.github.io/ecommerce-luckpet/" class="btn btn-outline">Live Demo</a>
+                            <a href="https://github.com/PabloG-7/ecommerce-luckpet?tab=readme-ov-file" class="btn btn-primary">GitHub Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/proj4.png" alt="Kushi">
+                    </div>
+                    <div class="project-info">
+                        <h3>Kushi - (Projeto Pessoal)</h3>
+                        <p>✅ E-commerce de moda com design clean, responsivo e intuitivo, oferecendo navegação fluida e catálogo bem organizado.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML/CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">E-commerce</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://pablog-7.github.io/ecommerce-kushi/" class="btn btn-outline">Live Demo</a>
+                            <a href="https://github.com/PabloG-7/ecommerce-kushi?tab=readme-ov-file" class="btn btn-primary">GitHub Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/proj3.png" alt="Controle de Custos">
+                    </div>
+                    <div class="project-info">
+                        <h3>UserFlow - (Projeto Pessoal)</h3>
+                        <p>✅ API RESTful com Node.js e MySQL para CRUD de usuários, incluindo cadastro de usuários detalhados e validação.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">HTML/CSS</span>
+                            <span class="project-tag">Finanças</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/PabloG-7/userflow-backend" class="btn btn-outline">Live Demo</a>
+                            <a href="https://github.com/PabloG-7/userflow-backend" class="btn btn-primary">GitHub Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contato</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <a href="mailto:pablooliver853@gmail.com">pablooliver853@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Telefone</h3>
+                            <a href="#">+55 (11) 95798-9816</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Localização</h3>
+                            <p>São Paulo, São Bernardo do Campo</p>
+                        </div>
+                    </div>
+                </div>
+                <form action="https://formspree.io/f/mrbpjldp" method="POST" class="contact-form">
+                    <input type="text" name="nome" placeholder="Seu Nome" required>
+                    <input type="email" name="email" placeholder="Seu Email" required>
+                    <input type="text" name="assunto" placeholder="Assunto">
+                    <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                  </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-
-        <ul>
-            <li>
-                <a href="#sobre">Sobre</a>
-            </li>
-            <li>
-                <a href="#experiencia">Experiência</a>
-            </li>
-            <li>
-                <a href="#projetos">Projetos</a>
-            </li>
-            <li>
-                <a href="#contato">Contato</a>
-            </li>
-        </ul>
-
-        <p class="copyright">&copy; Todos Os Direitos Reservados | Pablo Gomes</p>
-
+        <div class="container">
+            <div class="footer-links">
+                <a href="https://github.com/PabloG-7"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/pablogomess/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100024656091863"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/ypablitoo/"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2025 Pablo Gomes. Todos os direitos reservados.</p>
+        </div>
     </footer>
 
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="script.js"></script>
-    
+   
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
+<script src="javascript.js"></script>
 </body>
 </html>
