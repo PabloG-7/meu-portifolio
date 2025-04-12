@@ -83,6 +83,27 @@ nav {
     margin-right: 6px;
 }
 
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #e91e2c;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+    }
+
+.nav-links a:hover::after {
+    transform: scaleX(1);
+    }
+    
+    .nav-links a:hover {
+    color: var(--primary);
+    }
+
 /* botão de menu escondido no desktop */
 .mobile-menu-btn {
     display: none;
@@ -583,7 +604,7 @@ footer {
         .nav-links.active {
             display: flex;
         }    
-    }
+    
     .mobile-menu-btn {
         display: block;
     }
@@ -595,6 +616,7 @@ footer {
     .section-title h2 {
         font-size: 2rem;
     }
+}
 
 
 @media (max-width: 576px) {
