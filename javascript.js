@@ -26,10 +26,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 document.addEventListener("DOMContentLoaded", function () {
     const typed = new Typed('.anima-text', {
-      strings: ['/Frontend Developer', '{Backend Developer'],
+      strings: ['/Frontend Developer', '{Backend Developer', '/{Full-Stack Developer' ],
       typeSpeed: 60,
       backSpeed: 60,
       backDelay: 1000,
       loop: true,
     });
   });
+
+  // Inicializa o ScrollReveal
+ScrollReveal().reveal('.section-title, .about-content, .skill-card, .timeline-item, .project-card, .contact-container', {
+  delay: 200,
+  distance: '50px',
+  origin: 'bottom',
+  interval: 100,
+  easing: 'ease-in-out',
+  reset: true
+});

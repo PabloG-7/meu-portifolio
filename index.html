@@ -32,12 +32,16 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container">
+             <div class="floating">
+            <img src="img/ft-ghibi.jpg" alt="Pablo Gomes" class="hero-avatar" style="width: 200px; height: 200px; border-radius: 50%; border: 5px solid white; margin-bottom: 20px;">
+        </div>
             <h1><i class="fas fa-laptop-code"></i>
                 Pablo Gomes
               </h1>
             <span class="anima-text"></span>
             <p>Desenvolvedor Full Stack, criando soluções web modernas e responsivas com foco na experiência do usuário.</p>
             <div class="hero-btns">
+                  <a href="#projects" class="btn btn-primary">Meus Projetos</a>
                 <a href="#contact" class="btn btn-primary">Contato</a>
                 <a href="Curriculo-Pablo2025.pdf" class="btn btn-outline">Download CV</a>
             </div>
@@ -224,7 +228,7 @@
                         <img src="img/proj1.png" alt="LuckPet">
                     </div>
                     <div class="project-info">
-                        <h3>LuckPet - (Projeto Pessoal)</h3>
+                        <h3><span class="badge">LuckPet</span> - (Projeto Pessoal)</h3>
                         <p>✅ Plataforma online para petshops com interface moderna e fácil usabilidade, oferecendo promoções em rações selecionadas.</p>
                         <div class="project-tags">
                             <span class="project-tag">HTML/CSS</span>
@@ -242,7 +246,7 @@
                         <img src="img/proj4.png" alt="Kushi">
                     </div>
                     <div class="project-info">
-                        <h3>Kushi - (Projeto Pessoal)</h3>
+                        <h3><span class="badge">Kushi</span> - (Projeto Pessoal)</h3>
                         <p>✅ E-commerce de moda com design clean, responsivo e intuitivo, oferecendo navegação fluida e catálogo bem organizado.</p>
                         <div class="project-tags">
                             <span class="project-tag">HTML/CSS</span>
@@ -260,7 +264,7 @@
                         <img src="img/proj3.png" alt="Controle de Custos">
                     </div>
                     <div class="project-info">
-                        <h3>Pokedex - (Projeto Pessoal)</h3>
+                        <h3><span class="badge">Pokedex</span> - (Projeto Pessoal)</h3>
                         <p>✅ Uma Pokédex interativa construída com React e PokéAPI, com design moderno e responsivo para explorar o mundo Pokémon.</p>
                         <div class="project-tags">
                             <span class="project-tag">React</span>
@@ -278,7 +282,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="section" id="contact">
+   <section class="section" id="contact">
         <div class="container">
             <div class="section-title">
                 <h2>Contato</h2>
@@ -312,6 +316,15 @@
                             <p>São Paulo, São Bernardo do Campo</p>
                         </div>
                     </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/pablogomess/" target="_blank">/in/pablogomess</a>
+                        </div>
+                    </div>
                 </div>
                 <form action="https://formspree.io/f/mrbpjldp" method="POST" class="contact-form">
                     <input type="text" name="nome" placeholder="Seu Nome" required>
@@ -339,8 +352,7 @@
 
    
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-
+<script src="https://unpkg.com/scrollreveal"></script>
 <script src="javascript.js"></script>
 </body>
 </html>
