@@ -795,8 +795,20 @@ footer {
         height: 150px;
     }
     
+    .hero {
+    padding-top: 150px;
+    height: calc(121vh - 80px);
+    background-color: #000;
+    position: relative;
+    overflow: hidden;
+}
+    
     .skill-card {
         padding: 20px;
+    }
+
+    .github-link {
+        margin-top: 60px;
     }
     
     .project-info h3 {
@@ -805,5 +817,10 @@ footer {
     
     .project-links .btn {
         width: 100%;
+    }
+    .project-links {
+        margin: auto;
+        align-items: center;
+        justify-content: center;
     }
 }
