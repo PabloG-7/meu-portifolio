@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pablo Gomes | Portfólio Online</title>
+    <title>Pablo Gomes | Desenvolvedor Full Stack</title>
     <link rel="shortcut icon" href="img/avatar-de-favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="container">
             <nav>
-                <div class="logo">Pablo Gomes</i></div>
+                <div class="logo">Pablo Gomes</div>
                 <div class="nav-links" id="navLinks">
                     <a href="#home"><i class="fas fa-house"></i> Início</a>
                     <a href="#about"><i class="fas fa-user"></i> Sobre</a>
@@ -31,19 +31,29 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
+        <div id="hero-particles"></div>
         <div class="container">
-             <div class="floating">
-            <img src="img/ft-ghibi.jpg" alt="Pablo Gomes" class="hero-avatar" style="width: 200px; height: 200px; border-radius: 50%; border: 5px solid white; margin-bottom: 20px;">
-        </div>
-            <h1><i class="fas fa-laptop-code"></i>
-                Pablo Gomes
-              </h1>
-            <span class="anima-text"></span>
-            <p>Desenvolvedor Full Stack, criando soluções web modernas e responsivas com foco na experiência do usuário.</p>
-            <div class="hero-btns">
-                  <a href="#projects" class="btn btn-primary">Meus Projetos</a>
-                <a href="#contact" class="btn btn-primary">Contato</a>
-                <a href="Curriculo-Pablo2025.pdf" class="btn btn-outline">Download CV</a>
+            <div class="hero-content">
+                <div class="floating">
+                    <img src="img/ft-ghibi.jpg" alt="Pablo Gomes" class="hero-avatar">
+                </div>
+                <div class="hero-text">
+                    <h1><i class="fas fa-laptop-code"></i> Pablo Gomes</h1>
+                    <span class="anima-text"></span>
+                    <p class="hero-subtitle">Desenvolvedor Full Stack criando soluções web modernas e performáticas</p>
+                    <div class="hero-social">
+                        <a href="https://github.com/PabloG-7" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/pablogomess/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/pablogomesss__/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="hero-btns">
+                        <a href="#projects" class="btn btn-primary pulse"><i class="fas fa-eye"></i> Ver Projetos</a>
+                        <a href="#contact" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Contato</a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <a href="#about"><i class="fas fa-chevron-down"></i></a>
             </div>
         </div>
     </section>
@@ -218,11 +228,16 @@
 
     <!-- Projects Section -->
     <section class="section" id="projects">
-        <div class="container">
-            <div class="section-title">
-                <h2>Projetos Recentes</h2>
+    <div class="container">
+        <div class="section-title">
+            <h2>Projetos Recentes</h2>
+            <div class="section-subtitle">
+                <a href="https://github.com/PabloG-7" class="github-link" target="_blank">
+                    <i class="fab fa-github"></i> Ver mais projetos no GitHub
+                </a>
             </div>
-            <div class="projects-container">
+        </div>
+        <div class="projects-container">
                 <div class="project-card">
                     <div class="project-image">
                         <img src="img/proj1.png" alt="LuckPet">
@@ -237,7 +252,7 @@
                         </div>
                         <div class="project-links">
                             <a href="https://pablog-7.github.io/ecommerce-luckpet/" class="btn btn-outline">Live Demo</a>
-                            <a href="https://github.com/PabloG-7/ecommerce-luckpet?tab=readme-ov-file" class="btn btn-primary">GitHub Code</a>
+                            <a href="https://github.com/PabloG-7/ecommerce-luckpet?tab=readme-ov-file" class="btn btn-primary"><i class="fab fa-github"></i> Código</a>
                         </div>
                     </div>
                 </div>
@@ -255,7 +270,7 @@
                         </div>
                         <div class="project-links">
                             <a href="https://pablog-7.github.io/ecommerce-kushi/" class="btn btn-outline">Live Demo</a>
-                            <a href="https://github.com/PabloG-7/ecommerce-kushi?tab=readme-ov-file" class="btn btn-primary">GitHub Code</a>
+                            <a href="https://github.com/PabloG-7/ecommerce-kushi?tab=readme-ov-file" class="btn btn-primary"><i class="fab fa-github"></i> Código</a>
                         </div>
                     </div>
                 </div>
@@ -273,7 +288,7 @@
                         </div>
                         <div class="project-links">
                             <a href="https://pokedex-eight-drab-61.vercel.app/" class="btn btn-outline">Live Demo</a>
-                            <a href="https://github.com/PabloG-7/pokedex" class="btn btn-primary">GitHub Code</a>
+                            <a href="https://github.com/PabloG-7/pokedex" class="btn btn-primary"><i class="fab fa-github"></i> Código</a>
                         </div>
                     </div>
                 </div>
@@ -282,7 +297,7 @@
     </section>
 
     <!-- Contact Section -->
-   <section class="section" id="contact">
+    <section class="section" id="contact">
         <div class="container">
             <div class="section-title">
                 <h2>Contato</h2>
@@ -332,7 +347,7 @@
                     <input type="text" name="assunto" placeholder="Assunto">
                     <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
                     <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
-                  </form>
+                </form>
             </div>
         </div>
     </section>
@@ -344,15 +359,161 @@
                 <a href="https://github.com/PabloG-7"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/pablogomess/"><i class="fab fa-linkedin"></i></a>
                 <a href="https://www.facebook.com/profile.php?id=100024656091863"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/ypablitoo/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/pablogomesss__/"><i class="fab fa-instagram"></i></a>
             </div>
             <p>&copy; 2025 Pablo Gomes. Todos os direitos reservados.</p>
         </div>
     </footer>
 
-   
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script src="https://unpkg.com/scrollreveal"></script>
-<script src="javascript.js"></script>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        // Configuração das partículas
+        document.addEventListener('DOMContentLoaded', function() {
+            particlesJS('home', {
+                "particles": {
+                    "number": {
+                        "value": 80,
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
+                        }
+                    },
+                    "color": {
+                        "value": "#ffffff"
+                    },
+                    "shape": {
+                        "type": ["circle", "star"],
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        },
+                        "polygon": {
+                            "nb_sides": 5
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.5,
+                        "random": true,
+                        "anim": {
+                            "enable": true,
+                            "speed": 1,
+                            "opacity_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "size": {
+                        "value": 3,
+                        "random": true,
+                        "anim": {
+                            "enable": true,
+                            "speed": 2,
+                            "size_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": false
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 1,
+                        "direction": "bottom",
+                        "random": true,
+                        "straight": false,
+                        "out_mode": "out",
+                        "bounce": false,
+                        "attract": {
+                            "enable": false,
+                            "rotateX": 600,
+                            "rotateY": 1200
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "repulse"
+                        },
+                        "onclick": {
+                            "enable": true,
+                            "mode": "push"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "repulse": {
+                            "distance": 100,
+                            "duration": 0.4
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        }
+                    }
+                },
+                "retina_detect": true
+            });
+        });
+
+        // Menu mobile
+        const menuBtn = document.getElementById('menuBtn');
+        const navLinks = document.getElementById('navLinks');
+        const links = navLinks.querySelectorAll('a');
+
+        menuBtn.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+        });
+
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Typed.js animation
+        document.addEventListener("DOMContentLoaded", function() {
+            const typed = new Typed('.anima-text', {
+                strings: ['/Frontend Developer', '(Backend Developer', '{Full-Stack Developer'],
+                typeSpeed: 60,
+                backSpeed: 60,
+                backDelay: 1000,
+                loop: true,
+            });
+        });
+
+        // ScrollReveal animations
+        ScrollReveal().reveal('.section-title, .about-content, .skill-card, .timeline-item, .project-card, .contact-container', {
+            delay: 200,
+            distance: '50px',
+            origin: 'bottom',
+            interval: 100,
+            easing: 'ease-in-out',
+            reset: true
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 </html>
